@@ -1,0 +1,25 @@
+{
+  "name": "westery/aliyun-openapi",
+  "description": "Aliyun Openapi SDK for PHP",
+  "keywords": [ "aliyun", "openapi", "sdk" ],
+  "type": "library",
+  "license": "Apache-2.0",
+  "homepage": "https://www.aliyun.com/product",
+  "authors": [
+    {
+      "name": "Westery",
+      "homepage": "https://www.aliyun.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "require-dev": {
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "AliyunOpenapi\\": "src/"
+    }
+  }
+}
