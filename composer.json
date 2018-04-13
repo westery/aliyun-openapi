@@ -19,7 +19,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "AliyunOpenapi\\Push\\": "src/aliyun-php-sdk-push/Push/"
+      "AliyunOpenapi\\":"src/aliyun-php-sdk/"
     }
   }
 }
