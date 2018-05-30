@@ -18,6 +18,15 @@
  * under the License.
  */
 
+use AliyunOpenapi\Auth\Credential;
+use AliyunOpenapi\Auth\EcsRamRoleCredential;
+use AliyunOpenapi\Auth\RamRoleArnCredential;
+use AliyunOpenapi\Auth\ShaHmac1Signer;
+use AliyunOpenapi\Regions\Endpoint;
+use AliyunOpenapi\Regions\EndpointProvider;
+use AliyunOpenapi\Regions\LocationService;
+use AliyunOpenapi\Regions\ProductDomain;
+
 define("AUTH_TYPE_RAM_AK", "RAM_AK");
 define("AUTH_TYPE_RAM_ROLE_ARN", "RAM_ROLE_ARN");
 define("AUTH_TYPE_ECS_RAM_ROLE", "ECS_RAM_ROLE");
@@ -66,7 +75,7 @@ class DefaultProfile implements IClientProfile
 	{
 		if(null == self::$isigner)
 		{
-			self::$isigner = new ShaHmac1Signer(); 
+			self::$isigner = new ShaHmac1Signer();
 		}
 		return self::$isigner;
 	}
